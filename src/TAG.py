@@ -21,6 +21,16 @@ def generate():
         
     elif (tagType == "Bloc" or tagType == "bloc" or tagType == "BLOC"):
         tagContent = input("Tag (content) : ")
+        attributesLenght = input("Number of attributes : ")
 
-        Tag = f'<{tagName} id="{tagID}" class="{tagClass}">{tagContent}</{tagName}>'
+        for i in range(int(attributesLenght)):
+            attributeName = input(f"Name of attribute number {i+1} : ")
+            attributeValue = input(f"Value of attribute number {i+1} : ")
+
+            attributeFormat = f'{attributeName}="{attributeValue}"'
+            attributes += attributeFormat + " "
+
+        Tag = f'<{tagName} {attributes}id="{tagID}" class="{tagClass}">{tagContent}</{tagName}>'
         print(Tag)
+
+generate()
