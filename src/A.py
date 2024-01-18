@@ -1,5 +1,5 @@
 class A:
-    def __init__(self, CONTENT, LINK, TARGET, ID, CLASS):
+    def __init__(self, CONTENT, LINK, TARGET, ID="", CLASS=""):
         self.__CONTENT = CONTENT
         self.__LINK = LINK
         self.__TARGET = TARGET

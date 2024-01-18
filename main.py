@@ -9,7 +9,7 @@ import webbrowser
 if __name__ == "__main__":
 
     img = IMG("https://avatars.githubusercontent.com/u/57630920?v=4", "My-Avatar", "200px", "200px")
-    h1 = H1("Ismail Boularbah", "user_full_name", "user_full_name")
+    h1 = H1("Ismail Boularbah")
     p = P("TypeScript enthusiast and competitive programmer.", "about_p", "about_p")
     a = A("GitHub Profile", "https://github.com/boularbahsmail", "_blank", "github_profile_link", "github_profile_link")
 

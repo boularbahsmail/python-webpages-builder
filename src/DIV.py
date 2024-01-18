@@ -1,5 +1,5 @@
 class DIV:
-    def __init__(self, CONTENT, ID, CLASS):
+    def __init__(self, CONTENT, ID="", CLASS=""):
         self.__CONTENT = CONTENT
         self.__ID = ID
         self.__CLASS = CLASS
