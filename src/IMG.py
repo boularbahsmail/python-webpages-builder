@@ -7,48 +7,53 @@ class IMG:
         self.__ID = ID
         self.__CLASS = CLASS
 
-    def getSource(self):
+    @property
+    def Source(self):
         return self.__SOURCE
     
-    def setSource(self, newSource):
+    @Source.setter
+    def Source(self, newSource):
         self.__SOURCE = newSource
 
-    def getAlt(self):
+    @property
+    def Alt(self):
         return self.__ALT
     
-    def setAlt(self, newAlt):
+    @Alt.setter
+    def Alt(self, newAlt):
         self.__ALT = newAlt
 
-    def getWidth(self):
+    @property
+    def Width(self):
         return self.__WIDTH
     
-    def setWidth(self, newWidth):
+    @Width.setter
+    def Width(self, newWidth):
         self.__WIDTH = newWidth
 
-    def getHeight(self):
+    @property
+    def Height(self):
         return self.__HEIGHT
     
-    def setHeight(self, newHeight):
+    @Height.setter
+    def Height(self, newHeight):
         self.__WIDTH = newHeight
 
-    def getID(self):
+    @property
+    def Id(self):
         return self.__ID
     
-    def setID(self, newID):
+    @Id.setter
+    def Id(self, newID):
         self.__ID = newID
 
-    def getClass(self):
+    @property
+    def Class(self):
         return self.__CLASS
     
-    def setClass(self, newClass):
+    @Class.setter
+    def Class(self, newClass):
         self.__CLASS = newClass
 
-    Src = property(getSource, setSource)
-    Alt = property(getAlt, setAlt)
-    Width = property(getWidth, setWidth)
-    Height = property(getHeight, setHeight)
-    Id = property(getID, setID)
-    Class = property(getClass, setClass)
-
     def __str__(self):
-        return f'<img src="{self.Src}" alt="{self.Alt}" width="{self.Width}" height="{self.Height}" class="{self.Class}" id="{self.Id}" />'
+        return f'<img src="{self.Source}" alt="{self.Alt}" width="{self.Width}" height="{self.Height}" class="{self.Class}" id="{self.Id}" />'

@@ -4,27 +4,29 @@ class H1:
         self.__ID = ID
         self.__CLASS = CLASS
 
-    def getContent(self):
+    @property
+    def Content(self):
         return self.__CONTENT
     
-    def setContent(self, newContent):
+    @Content.setter
+    def Content(self, newContent):
         self.__CONTENT = newContent
 
-    def getID(self):
+    @property
+    def Id(self):
         return self.__ID
     
-    def setID(self, newID):
+    @Id.setter
+    def Id(self, newID):
         self.__ID = newID
 
-    def getClass(self):
+    @property
+    def Class(self):
         return self.__CLASS
     
-    def setClass(self, newClass):
+    @Class.setter
+    def Class(self, newClass):
         self.__CLASS = newClass
-
-    Content = property(getContent, setContent)
-    Id = property(getID, setID)
-    Class = property(getClass, setClass)
 
     def __str__(self):
         return f'<h1 class="{self.Class}" id="{self.Id}">{self.Content}</h1>'

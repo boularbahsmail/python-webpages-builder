@@ -3,20 +3,21 @@ class HTML:
         self.__TITLE =  TITLE
         self.__CONTENT = CONTENT
 
-    def getTitle(self):
+    @property
+    def Title(self):
         return self.__TITLE
     
-    def setTitle(self, newTitle):
+    @Title.setter
+    def Title(self, newTitle):
         self.__TITLE = newTitle
 
-    def getContent(self):
+    @property
+    def Content(self):
         return self.__CONTENT
     
-    def setContent(self, newContent):
+    @Content.setter
+    def Content(self, newContent):
         self.__CONTENT = newContent
-
-    Title = property(getTitle, setTitle)
-    Content = property(getContent, setContent)
 
     def __str__(self):
         return f'<!DOCTYPE html><html><head><title>{self.Title}</title></head><body>{self.Content}</body></html>'

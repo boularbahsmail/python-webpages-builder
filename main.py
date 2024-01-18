@@ -4,7 +4,6 @@ from src.DIV import DIV
 from src.P import P
 from src.IMG import IMG
 from src.A import A
-import webbrowser
 
 if __name__ == "__main__":
 
@@ -22,5 +21,3 @@ if __name__ == "__main__":
     with open("index.html", "w") as index:
         index.write(f'{myWebsite}')
         print("HTML Page Saved Successfully!!")
-        # Open index.html file
-        webbrowser.open("index.html")
