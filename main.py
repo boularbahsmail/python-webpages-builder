@@ -9,13 +9,14 @@ import webbrowser
 if __name__ == "__main__":
 
     img = IMG("https://avatars.githubusercontent.com/u/57630920?v=4", "My-Avatar", "200px", "200px")
-    h1 = H1("Ismail Boularbah", "HTML_TAG_ID", "HTML_TAG_CLASS")
-    p = P("TypeScript enthusiast and competitive programmer.", "P_TAG_ID", "P_TAG_CLASS")
-    a = A("GitHub Profile", "https://github.com/boularbahsmail", "_blank", "A_TAG_ID", "A_TAG_CLASS")
+    h1 = H1("Ismail Boularbah", "user_full_name", "user_full_name")
+    p = P("TypeScript enthusiast and competitive programmer.", "about_p", "about_p")
+    a = A("GitHub Profile", "https://github.com/boularbahsmail", "_blank", "github_profile_link", "github_profile_link")
 
-    div = DIV(f'{img}{h1}{p}{a}', "DIV_TAG_ID", "DIV_TAG_CLASS")
+    card = DIV(f'{img}{h1}{p}{a}', "card", "card")
+    container = DIV(f'{card}', "container", "container")
 
-    myWebsiteContent = f'{div}'
+    myWebsiteContent = f'{container}'
     myWebsite = HTML("My Web Page Generated With Python", myWebsiteContent)
 
     with open("index.html", "w") as index:

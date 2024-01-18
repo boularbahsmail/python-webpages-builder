@@ -35,4 +35,4 @@ class IMG:
     Height = property(getHeight, setHeight)
 
     def __str__(self):
-        return f'<img src="{self.Src}" alt={self.Alt} width={self.Width} height={self.Height} />'
+        return f'<img src="{self.Src}" alt="{self.Alt}" width="{self.Width}" height="{self.Height}" />'
